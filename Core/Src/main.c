@@ -212,7 +212,7 @@ int main(void)
    //Run LED5--------------------------------------------------//
    if(mode == 0)
    {
-     if(HAL_GetTick() - TimeStamp3 >= 0 && HAL_GetTick() - TimeStamp3 <= 500 ) //millisecond now time
+     if(HAL_GetTick() - TimeStamp3 >= 0 && HAL_GetTick() - TimeStamp3 <= 1500 ) //millisecond now time
         {
              HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
         }
@@ -228,7 +228,7 @@ int main(void)
 
    else if(mode == 1)
    {
-     if(HAL_GetTick() - TimeStamp3 >= 0 && HAL_GetTick() - TimeStamp3 <= 500 ) //millisecond now time
+     if(HAL_GetTick() - TimeStamp3 >= 0 && HAL_GetTick() - TimeStamp3 <= 1500 ) //millisecond now time
         {
             HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
         }
